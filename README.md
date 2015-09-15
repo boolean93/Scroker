@@ -1,2 +1,2 @@
 # Scroker
-may be a beautiful Scrum Poker.
+May be a beautiful Scrum Poker.
