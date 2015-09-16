@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		9386795A1BA7EC1000FD29B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938679591BA7EC1000FD29B0 /* main.m */; };
 		9386795D1BA7EC1000FD29B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9386795C1BA7EC1000FD29B0 /* AppDelegate.m */; };
-		938679601BA7EC1000FD29B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9386795F1BA7EC1000FD29B0 /* ViewController.m */; };
 		938679631BA7EC1000FD29B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938679611BA7EC1000FD29B0 /* Main.storyboard */; };
 		938679651BA7EC1000FD29B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938679641BA7EC1000FD29B0 /* Images.xcassets */; };
 		938679681BA7EC1000FD29B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938679661BA7EC1000FD29B0 /* LaunchScreen.xib */; };
 		938679741BA7EC1000FD29B0 /* ScrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938679731BA7EC1000FD29B0 /* ScrokerTests.m */; };
+		93B1D1C21BA914DA00AE707D /* SPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D1C11BA914DA00AE707D /* SPMainViewController.m */; };
+		93B1D1C61BA9157300AE707D /* SPMainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D1C41BA9157300AE707D /* SPMainViewCell.m */; };
+		93B1D1C71BA9157300AE707D /* SPMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */; };
+		93B309251BA93AC5009B4709 /* SPCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */; };
 		F48C96B25380B158C5C0AC93 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937AC78C3133B7F2E97233BB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,14 +39,19 @@
 		938679591BA7EC1000FD29B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9386795B1BA7EC1000FD29B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9386795C1BA7EC1000FD29B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9386795E1BA7EC1000FD29B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9386795F1BA7EC1000FD29B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		938679621BA7EC1000FD29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		938679641BA7EC1000FD29B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		938679671BA7EC1000FD29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9386796D1BA7EC1000FD29B0 /* ScrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938679721BA7EC1000FD29B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938679731BA7EC1000FD29B0 /* ScrokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrokerTests.m; sourceTree = "<group>"; };
+		93B1D1C01BA914DA00AE707D /* SPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewController.h; sourceTree = "<group>"; };
+		93B1D1C11BA914DA00AE707D /* SPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewController.m; sourceTree = "<group>"; };
+		93B1D1C31BA9157300AE707D /* SPMainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewCell.h; sourceTree = "<group>"; };
+		93B1D1C41BA9157300AE707D /* SPMainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewCell.m; sourceTree = "<group>"; };
+		93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPMainViewCell.xib; sourceTree = "<group>"; };
+		93B309231BA93AC5009B4709 /* SPCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCollectionViewLayout.h; sourceTree = "<group>"; };
+		93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCollectionViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,13 @@
 			children = (
 				9386795B1BA7EC1000FD29B0 /* AppDelegate.h */,
 				9386795C1BA7EC1000FD29B0 /* AppDelegate.m */,
-				9386795E1BA7EC1000FD29B0 /* ViewController.h */,
-				9386795F1BA7EC1000FD29B0 /* ViewController.m */,
+				93B309231BA93AC5009B4709 /* SPCollectionViewLayout.h */,
+				93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */,
+				93B1D1C01BA914DA00AE707D /* SPMainViewController.h */,
+				93B1D1C11BA914DA00AE707D /* SPMainViewController.m */,
+				93B1D1C31BA9157300AE707D /* SPMainViewCell.h */,
+				93B1D1C41BA9157300AE707D /* SPMainViewCell.m */,
+				93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */,
 				938679611BA7EC1000FD29B0 /* Main.storyboard */,
 				938679641BA7EC1000FD29B0 /* Images.xcassets */,
 				938679661BA7EC1000FD29B0 /* LaunchScreen.xib */,
@@ -228,6 +241,7 @@
 			files = (
 				938679631BA7EC1000FD29B0 /* Main.storyboard in Resources */,
 				938679681BA7EC1000FD29B0 /* LaunchScreen.xib in Resources */,
+				93B1D1C71BA9157300AE707D /* SPMainViewCell.xib in Resources */,
 				938679651BA7EC1000FD29B0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938679601BA7EC1000FD29B0 /* ViewController.m in Sources */,
+				93B1D1C21BA914DA00AE707D /* SPMainViewController.m in Sources */,
+				93B309251BA93AC5009B4709 /* SPCollectionViewLayout.m in Sources */,
 				9386795D1BA7EC1000FD29B0 /* AppDelegate.m in Sources */,
+				93B1D1C61BA9157300AE707D /* SPMainViewCell.m in Sources */,
 				9386795A1BA7EC1000FD29B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
