@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPCollectionViewLayout : UICollectionViewLayout
+@interface SPCollectionViewLayout : UICollectionViewFlowLayout
 
 @end

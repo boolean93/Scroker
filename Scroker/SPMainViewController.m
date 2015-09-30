@@ -14,7 +14,7 @@
 
 @implementation SPMainViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"MyPokerCell";
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -23,8 +23,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass(SPMainViewCell.class) bundle:[NSBundle bundleForClass:SPMainViewCell.class]];
-    [self.collectionView registerNib:nib forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +45,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self.class pokerNumbers].count;

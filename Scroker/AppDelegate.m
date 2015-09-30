@@ -14,9 +14,19 @@
 
 @implementation AppDelegate
 
+- (void)application:(UIApplication *)application performActionForShortcutItem:(nonnull UIApplicationShortcutItem *)shortcutItem completionHandler:(nonnull void (^)(BOOL))completionHandler {
+    NSLog(shortcutItem.type);
+    NSString *x = @"hah";
+    NSLog(@"%p %p", x, @"hah");
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSMutableArray *items = NSMutableArray.new;
+    [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker1" localizedTitle:@"1h" localizedSubtitle:@"Choos a ONE HOUR poker" icon:nil userInfo:nil]];
+    [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker2" localizedTitle:@"2h" localizedSubtitle:@"Choose a TWO HOUR poker" icon:nil userInfo:nil]];
+    [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker3" localizedTitle:@"3h" localizedSubtitle:@"Choose a THREE HOUR poker" icon:nil userInfo:nil]];
+    application.shortcutItems = items;
     return YES;
 }
 
