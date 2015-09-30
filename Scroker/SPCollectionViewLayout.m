@@ -9,8 +9,5 @@
 #import "SPCollectionViewLayout.h"
 
 @implementation SPCollectionViewLayout
-- (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    return attributes;
-}
+
 @end

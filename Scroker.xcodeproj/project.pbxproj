@@ -12,23 +12,11 @@
 		938679631BA7EC1000FD29B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938679611BA7EC1000FD29B0 /* Main.storyboard */; };
 		938679651BA7EC1000FD29B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938679641BA7EC1000FD29B0 /* Images.xcassets */; };
 		938679681BA7EC1000FD29B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 938679661BA7EC1000FD29B0 /* LaunchScreen.xib */; };
-		938679741BA7EC1000FD29B0 /* ScrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 938679731BA7EC1000FD29B0 /* ScrokerTests.m */; };
 		93B1D1C21BA914DA00AE707D /* SPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D1C11BA914DA00AE707D /* SPMainViewController.m */; };
-		93B1D1C61BA9157300AE707D /* SPMainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B1D1C41BA9157300AE707D /* SPMainViewCell.m */; };
-		93B1D1C71BA9157300AE707D /* SPMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */; };
 		93B309251BA93AC5009B4709 /* SPCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */; };
+		93E1075C1BBC1972006709EF /* SPMainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1075A1BBC1972006709EF /* SPMainViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		F48C96B25380B158C5C0AC93 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937AC78C3133B7F2E97233BB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9386796E1BA7EC1000FD29B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9386794C1BA7EC1000FD29B0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 938679531BA7EC1000FD29B0;
-			remoteInfo = Scroker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5510767701E33897E36E6116 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,16 +30,14 @@
 		938679621BA7EC1000FD29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		938679641BA7EC1000FD29B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		938679671BA7EC1000FD29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9386796D1BA7EC1000FD29B0 /* ScrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		938679721BA7EC1000FD29B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938679731BA7EC1000FD29B0 /* ScrokerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrokerTests.m; sourceTree = "<group>"; };
 		93B1D1C01BA914DA00AE707D /* SPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewController.h; sourceTree = "<group>"; };
 		93B1D1C11BA914DA00AE707D /* SPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewController.m; sourceTree = "<group>"; };
-		93B1D1C31BA9157300AE707D /* SPMainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewCell.h; sourceTree = "<group>"; };
-		93B1D1C41BA9157300AE707D /* SPMainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewCell.m; sourceTree = "<group>"; };
-		93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPMainViewCell.xib; sourceTree = "<group>"; };
 		93B309231BA93AC5009B4709 /* SPCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCollectionViewLayout.h; sourceTree = "<group>"; };
 		93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCollectionViewLayout.m; sourceTree = "<group>"; };
+		93E107591BBC1972006709EF /* SPMainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewCell.h; sourceTree = "<group>"; };
+		93E1075A1BBC1972006709EF /* SPMainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48C96B25380B158C5C0AC93 /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9386796A1BA7EC1000FD29B0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				938679541BA7EC1000FD29B0 /* Scroker.app */,
-				9386796D1BA7EC1000FD29B0 /* ScrokerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,13 +97,12 @@
 				93B309241BA93AC5009B4709 /* SPCollectionViewLayout.m */,
 				93B1D1C01BA914DA00AE707D /* SPMainViewController.h */,
 				93B1D1C11BA914DA00AE707D /* SPMainViewController.m */,
-				93B1D1C31BA9157300AE707D /* SPMainViewCell.h */,
-				93B1D1C41BA9157300AE707D /* SPMainViewCell.m */,
-				93B1D1C51BA9157300AE707D /* SPMainViewCell.xib */,
 				938679611BA7EC1000FD29B0 /* Main.storyboard */,
 				938679641BA7EC1000FD29B0 /* Images.xcassets */,
 				938679661BA7EC1000FD29B0 /* LaunchScreen.xib */,
 				938679571BA7EC1000FD29B0 /* Supporting Files */,
+				93E107591BBC1972006709EF /* SPMainViewCell.h */,
+				93E1075A1BBC1972006709EF /* SPMainViewCell.m */,
 			);
 			path = Scroker;
 			sourceTree = "<group>";
@@ -179,24 +156,6 @@
 			productReference = 938679541BA7EC1000FD29B0 /* Scroker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9386796C1BA7EC1000FD29B0 /* ScrokerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9386797A1BA7EC1000FD29B0 /* Build configuration list for PBXNativeTarget "ScrokerTests" */;
-			buildPhases = (
-				938679691BA7EC1000FD29B0 /* Sources */,
-				9386796A1BA7EC1000FD29B0 /* Frameworks */,
-				9386796B1BA7EC1000FD29B0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9386796F1BA7EC1000FD29B0 /* PBXTargetDependency */,
-			);
-			name = ScrokerTests;
-			productName = ScrokerTests;
-			productReference = 9386796D1BA7EC1000FD29B0 /* ScrokerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,11 +167,6 @@
 				TargetAttributes = {
 					938679531BA7EC1000FD29B0 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 67756KT9DX;
-					};
-					9386796C1BA7EC1000FD29B0 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 938679531BA7EC1000FD29B0;
 					};
 				};
 			};
@@ -230,7 +184,6 @@
 			projectRoot = "";
 			targets = (
 				938679531BA7EC1000FD29B0 /* Scroker */,
-				9386796C1BA7EC1000FD29B0 /* ScrokerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,15 +195,7 @@
 			files = (
 				938679631BA7EC1000FD29B0 /* Main.storyboard in Resources */,
 				938679681BA7EC1000FD29B0 /* LaunchScreen.xib in Resources */,
-				93B1D1C71BA9157300AE707D /* SPMainViewCell.xib in Resources */,
 				938679651BA7EC1000FD29B0 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9386796B1BA7EC1000FD29B0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,29 +256,13 @@
 			files = (
 				93B1D1C21BA914DA00AE707D /* SPMainViewController.m in Sources */,
 				93B309251BA93AC5009B4709 /* SPCollectionViewLayout.m in Sources */,
+				93E1075C1BBC1972006709EF /* SPMainViewCell.m in Sources */,
 				9386795D1BA7EC1000FD29B0 /* AppDelegate.m in Sources */,
-				93B1D1C61BA9157300AE707D /* SPMainViewCell.m in Sources */,
 				9386795A1BA7EC1000FD29B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		938679691BA7EC1000FD29B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				938679741BA7EC1000FD29B0 /* ScrokerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9386796F1BA7EC1000FD29B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 938679531BA7EC1000FD29B0 /* Scroker */;
-			targetProxy = 9386796E1BA7EC1000FD29B0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		938679611BA7EC1000FD29B0 /* Main.storyboard */ = {
@@ -372,7 +301,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -391,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -416,7 +345,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -429,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,40 +394,6 @@
 			};
 			name = Release;
 		};
-		9386797B1BA7EC1000FD29B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ScrokerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scroker.app/Scroker";
-			};
-			name = Debug;
-		};
-		9386797C1BA7EC1000FD29B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ScrokerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scroker.app/Scroker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,15 +411,6 @@
 			buildConfigurations = (
 				938679781BA7EC1000FD29B0 /* Debug */,
 				938679791BA7EC1000FD29B0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9386797A1BA7EC1000FD29B0 /* Build configuration list for PBXNativeTarget "ScrokerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9386797B1BA7EC1000FD29B0 /* Debug */,
-				9386797C1BA7EC1000FD29B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

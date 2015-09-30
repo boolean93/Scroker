@@ -8,6 +8,7 @@
 
 #import "SPMainViewController.h"
 #import "SPMainViewCell.h"
+#import "SPCollectionViewLayout.h"
 
 @interface SPMainViewController ()
 @end
@@ -15,14 +16,23 @@
 @implementation SPMainViewController
 
 static NSString * const reuseIdentifier = @"MyPokerCell";
+static CGFloat kItemHeight = 150.f;
+//static CGFloat kItemWidth = kItemHeight * 0.618;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    SPCollectionViewLayout *layout = (SPCollectionViewLayout *)self.collectionViewLayout;
+    layout.itemSize = CGSizeMake(kItemHeight * 0.618, kItemHeight);
+    layout.headerReferenceSize = CGSizeMake(0, 30);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,13 +75,14 @@ static NSString * const reuseIdentifier = @"MyPokerCell";
 }
 */
 
-/*
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
-*/
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    NSLog(@"You tapped me : %ld", indexPath.row);
+}
 /*
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
