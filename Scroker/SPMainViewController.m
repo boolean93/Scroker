@@ -11,6 +11,7 @@
 #import "SPCollectionViewLayout.h"
 
 @interface SPMainViewController ()
+@property (strong, nonatomic) UIView *detailView;
 @end
 
 @implementation SPMainViewController
@@ -21,6 +22,7 @@ static CGFloat kItemHeight = 150.f;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    self.detailView = UIView.new;
     SPCollectionViewLayout *layout = (SPCollectionViewLayout *)self.collectionViewLayout;
     layout.itemSize = CGSizeMake(kItemHeight * 0.618, kItemHeight);
     layout.headerReferenceSize = CGSizeMake(0, 30);
@@ -81,7 +83,7 @@ static CGFloat kItemHeight = 150.f;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    NSLog(@"You tapped me : %ld", indexPath.row);
+    NSLog(@"You tapped me : %@", [self collectionView:collectionView cellForItemAtIndexPath:indexPath]);
 }
 /*
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
