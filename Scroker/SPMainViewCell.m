@@ -11,8 +11,8 @@
 @implementation SPMainViewCell
 
 - (void)awakeFromNib {
-    self.contentView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.contentView.layer.borderWidth = 1;
+    self.wrapperView.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.wrapperView.layer.borderWidth = 2;
 }
 
 @end

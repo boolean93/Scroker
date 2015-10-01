@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SPMainViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIView *wrapperView;
 @property (weak, nonatomic) IBOutlet UILabel *number;
 
 @end
