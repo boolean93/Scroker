@@ -10,10 +10,11 @@
 #import "SPMainViewCell.h"
 #import "SPMainPokerView.h"
 #import "SPCollectionViewLayout.h"
+#import "SPPokerDetailController.h"
 
 @interface SPMainViewController ()
 @property (strong, nonatomic) SPMainPokerView *pokerView;
-
+@property (assign, nonatomic) NSString *pokerNumber;
 @end
 
 @implementation SPMainViewController
@@ -33,6 +34,7 @@ static CGFloat kItemHeight = 150.f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self registerForPreviewingWithDelegate:self sourceView:self.view];
     self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
@@ -45,15 +47,13 @@ static CGFloat kItemHeight = 150.f;
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    ((SPPokerDetailController *)[segue destinationViewController]).pokerNumber = self.pokerNumber;
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -83,13 +83,15 @@ static CGFloat kItemHeight = 150.f;
 
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    SPMainViewCell *cell = (SPMainViewCell *)[self collectionView:collectionView cellForItemAtIndexPath:indexPath];
+    self.pokerNumber = cell.number.text;
     return YES;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    SPMainViewCell *cell = (SPMainViewCell *)[self collectionView:collectionView cellForItemAtIndexPath:indexPath];
-    self.pokerView.frame = cell.frame;
-    self.pokerView.number.text = cell.number.text;
+//    SPMainViewCell *cell = (SPMainViewCell *)[self collectionView:collectionView cellForItemAtIndexPath:indexPath];
+//    self.pokerView.frame = cell.frame;
+//    self.pokerView.number.text = cell.number.text;
 }
 /*
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
@@ -110,4 +112,28 @@ static CGFloat kItemHeight = 150.f;
 + (NSArray *)pokerNumbers {
     return @[@"0", @"1/2", @"1", @"2", @"3", @"5", @"8", @"13", @"20", @"40", @"100", @"∞", @"?", @"!"];
 }
+
+#pragma mark - peek and pop
+
+// for peek
+- (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:location];
+    if (!indexPath) {
+        return nil;
+    }
+    SPMainViewCell *cell = (SPMainViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    previewingContext.sourceRect = cell.frame;
+    SPPokerDetailController *detailController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPPokerDetailController"];
+    detailController.pokerNumber = cell.number.text;
+    detailController.preferredContentSize = CGSizeMake(0.0, 400);
+    NSLog(@"peek action");
+    return detailController;
+}
+
+// for pop
+- (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit {
+    [self showViewController:viewControllerToCommit sender:self];
+    NSLog(@"%@ pop action", previewingContext);
+}
+
 @end

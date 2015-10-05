@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GNe-c3-O4o">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Kn-KI-fJt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Bdb-oR-NV1">
+            <objects>
+                <navigationController id="2Kn-KI-fJt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="bAH-pG-if0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GNe-c3-O4o" kind="relationship" relationship="rootViewController" id="cax-Lq-k6r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHP-KB-g2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="347"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="vLO-yF-AJM">
             <objects>
@@ -16,14 +32,13 @@
                         <collectionViewLayout key="collectionViewLayout" id="RXy-Et-oSP" customClass="SPCollectionViewLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyPokerCell" id="kC6-oT-NdU" customClass="SPMainViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="103" height="139"/>
+                                <rect key="frame" x="0.0" y="64" width="103" height="139"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="103" height="139"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05G-Pb-TG5">
-
                                             <rect key="frame" x="8" y="8" width="87" height="123"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-Rq-s2l">
@@ -56,6 +71,7 @@
                                 <connections>
                                     <outlet property="number" destination="yQi-Rq-s2l" id="eRK-GN-DXA"/>
                                     <outlet property="wrapView" destination="05G-Pb-TG5" id="fPh-9A-tv8"/>
+                                    <segue destination="bsn-D2-qnL" kind="show" id="6g5-OC-ddj"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -64,10 +80,46 @@
                             <outlet property="delegate" destination="GNe-c3-O4o" id="VNW-nM-hqc"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="VgJ-IP-QHw"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="em2-Yq-UTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="82" y="326"/>
+            <point key="canvasLocation" x="-214" y="347"/>
+        </scene>
+        <!--Poker Detail Controller-->
+        <scene sceneID="489-UU-U7M">
+            <objects>
+                <viewController storyboardIdentifier="SPPokerDetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bsn-D2-qnL" customClass="SPPokerDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lYG-en-bzE"/>
+                        <viewControllerLayoutGuide type="bottom" id="0SW-aV-d6b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aL9-Et-UHi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-mR-eth">
+                                <rect key="frame" x="20" y="300" width="560" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="250"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QNx-mR-eth" firstAttribute="centerX" secondItem="aL9-Et-UHi" secondAttribute="centerX" id="W5T-BZ-Uux"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QNx-mR-eth" secondAttribute="trailing" id="da9-dU-A19"/>
+                            <constraint firstItem="QNx-mR-eth" firstAttribute="centerY" secondItem="aL9-Et-UHi" secondAttribute="centerY" id="lA5-BR-y4v"/>
+                            <constraint firstItem="QNx-mR-eth" firstAttribute="leading" secondItem="aL9-Et-UHi" secondAttribute="leadingMargin" id="p6s-qN-gPa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="QNx-mR-eth" id="0rx-gb-HAw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30L-zN-1eB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="347"/>
         </scene>
     </scenes>
 </document>

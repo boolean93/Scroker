@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931A19BB1BC27D8C009FF9FA /* SPPokerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931A19B91BC27D8C009FF9FA /* SPPokerDetailController.m */; settings = {ASSET_TAGS = (); }; };
 		9373CA521BBD7D9B00DF1122 /* SPMainPokerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9373CA511BBD7D9B00DF1122 /* SPMainPokerView.xib */; settings = {ASSET_TAGS = (); }; };
 		9373CA551BBD7E5E00DF1122 /* SPMainPokerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9373CA541BBD7E5E00DF1122 /* SPMainPokerView.m */; settings = {ASSET_TAGS = (); }; };
 		9386795A1BA7EC1000FD29B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 938679591BA7EC1000FD29B0 /* main.m */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		5510767701E33897E36E6116 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7593483DD35E97BC1CB6E708 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		931A19B81BC27D8C009FF9FA /* SPPokerDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPokerDetailController.h; sourceTree = "<group>"; };
+		931A19B91BC27D8C009FF9FA /* SPPokerDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPokerDetailController.m; sourceTree = "<group>"; };
 		9373CA511BBD7D9B00DF1122 /* SPMainPokerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPMainPokerView.xib; sourceTree = "<group>"; };
 		9373CA531BBD7E5E00DF1122 /* SPMainPokerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainPokerView.h; sourceTree = "<group>"; };
 		9373CA541BBD7E5E00DF1122 /* SPMainPokerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainPokerView.m; sourceTree = "<group>"; };
@@ -106,11 +109,13 @@
 				93B1D1C01BA914DA00AE707D /* SPMainViewController.h */,
 				93B1D1C11BA914DA00AE707D /* SPMainViewController.m */,
 				938679611BA7EC1000FD29B0 /* Main.storyboard */,
-				938679641BA7EC1000FD29B0 /* Images.xcassets */,
 				938679661BA7EC1000FD29B0 /* LaunchScreen.xib */,
-				938679571BA7EC1000FD29B0 /* Supporting Files */,
 				93E107591BBC1972006709EF /* SPMainViewCell.h */,
 				93E1075A1BBC1972006709EF /* SPMainViewCell.m */,
+				931A19B81BC27D8C009FF9FA /* SPPokerDetailController.h */,
+				931A19B91BC27D8C009FF9FA /* SPPokerDetailController.m */,
+				938679641BA7EC1000FD29B0 /* Images.xcassets */,
+				938679571BA7EC1000FD29B0 /* Supporting Files */,
 			);
 			path = Scroker;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931A19BB1BC27D8C009FF9FA /* SPPokerDetailController.m in Sources */,
 				9373CA551BBD7E5E00DF1122 /* SPMainPokerView.m in Sources */,
 				93B1D1C21BA914DA00AE707D /* SPMainViewController.m in Sources */,
 				93B309251BA93AC5009B4709 /* SPCollectionViewLayout.m in Sources */,

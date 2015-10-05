@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPMainViewController : UICollectionViewController
+@interface SPMainViewController : UICollectionViewController<UIViewControllerPreviewingDelegate>
 
 @end
