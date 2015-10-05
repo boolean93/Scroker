@@ -11,7 +11,7 @@
 @implementation SPMainPokerView
 
 - (void)awakeFromNib {
-    self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    self.layer.borderColor = [UIColor blackColor].CGColor;
     self.layer.borderWidth = 2;
     self.frame = CGRectZero;
 }
