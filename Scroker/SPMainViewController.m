@@ -13,6 +13,7 @@
 
 @interface SPMainViewController ()
 @property (strong, nonatomic) SPMainPokerView *pokerView;
+
 @end
 
 @implementation SPMainViewController
@@ -25,7 +26,6 @@ static CGFloat kItemHeight = 150.f;
     [super viewWillAppear:animated];
     self.pokerView = [[NSBundle mainBundle] loadNibNamed:@"SPMainPokerView" owner:self options:nil][0];
     [self.view addSubview:self.pokerView];
-    
     SPCollectionViewLayout *layout = (SPCollectionViewLayout *)self.collectionViewLayout;
     layout.itemSize = CGSizeMake(kItemHeight * 0.618, kItemHeight);
     layout.headerReferenceSize = CGSizeMake(0, 30);
