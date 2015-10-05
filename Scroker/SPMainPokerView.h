@@ -1,15 +1,13 @@
 //
-//  SPMainViewCell.h
+//  SPMainPokerView.h
 //  Scroker
 //
-//  Created by boolean93 on 15/9/30.
+//  Created by BooleanMac on 15/10/1.
 //  Copyright © 2015年 boolean93. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SPMainViewCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIView *wrapView;
+@interface SPMainPokerView : UIView
 @property (weak, nonatomic) IBOutlet UILabel *number;
-
 @end

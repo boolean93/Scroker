@@ -22,11 +22,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="103" height="139"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05G-Pb-TG5">
-                                            <rect key="frame" x="16" y="8" width="71" height="123"/>
+                                        <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05G-Pb-TG5">
+                                            <rect key="frame" x="8" y="8" width="87" height="123"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-Rq-s2l">
-                                                    <rect key="frame" x="-3" y="43" width="78" height="39"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-Rq-s2l">
+                                                    <rect key="frame" x="5" y="42" width="78" height="39"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,13 +48,13 @@
                                 <constraints>
                                     <constraint firstAttribute="bottomMargin" secondItem="05G-Pb-TG5" secondAttribute="bottom" id="OSf-VT-jSj"/>
                                     <constraint firstAttribute="topMargin" secondItem="05G-Pb-TG5" secondAttribute="top" id="d1R-z5-jMX"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="05G-Pb-TG5" secondAttribute="trailing" constant="8" id="daA-8p-FMi"/>
-                                    <constraint firstItem="05G-Pb-TG5" firstAttribute="leading" secondItem="kC6-oT-NdU" secondAttribute="leadingMargin" constant="8" id="tqi-X6-a5z"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="05G-Pb-TG5" secondAttribute="trailing" id="daA-8p-FMi"/>
+                                    <constraint firstItem="05G-Pb-TG5" firstAttribute="leading" secondItem="kC6-oT-NdU" secondAttribute="leadingMargin" id="tqi-X6-a5z"/>
                                 </constraints>
                                 <size key="customSize" width="103" height="139"/>
                                 <connections>
-                                    <outlet property="contentView" destination="05G-Pb-TG5" id="0nQ-v0-g6f"/>
                                     <outlet property="number" destination="yQi-Rq-s2l" id="eRK-GN-DXA"/>
+                                    <outlet property="wrapView" destination="05G-Pb-TG5" id="fPh-9A-tv8"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

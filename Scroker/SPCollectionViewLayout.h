@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPCollectionViewLayout : UICollectionViewFlowLayout
+@interface SPCollectionViewLayout : UICollectionViewFlowLayout<UICollectionViewDelegateFlowLayout>
 @end
