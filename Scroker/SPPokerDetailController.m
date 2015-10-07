@@ -24,6 +24,17 @@
 - (void)viewWillAppear:(BOOL)animated {
     self.numberLabel.text = self.pokerNumber;
     self.numberLabel.adjustsFontSizeToFitWidth = YES;
+    CALayer *borderLayer = [[CALayer alloc]init];
+    CGRect frame = self.view.frame;
+    CGFloat delta = 20;
+    frame.origin.x += delta;
+    frame.origin.y -= 5;
+    frame.size.width -= delta * 2;
+    frame.size.height += 5 * 2;
+    borderLayer.frame = frame;
+    borderLayer.borderWidth = 5;
+    borderLayer.borderColor = [UIColor whiteColor].CGColor;
+    [self.view.layer addSublayer:borderLayer];
     [super viewWillAppear:animated];
 }
 

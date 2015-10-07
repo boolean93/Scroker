@@ -11,8 +11,8 @@
 @implementation SPMainViewCell
 
 - (void)awakeFromNib {
-    self.wrapView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.wrapView.layer.borderWidth = 2;
+    self.wrapView.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.wrapView.layer.borderWidth = 3;
     self.number.adjustsFontSizeToFitWidth = YES;
 }
 
