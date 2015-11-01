@@ -31,7 +31,6 @@ static CGFloat kItemHeight = 150.f;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self registerForPreviewingWithDelegate:self sourceView:self.view];
-    self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (BOOL)prefersStatusBarHidden {
