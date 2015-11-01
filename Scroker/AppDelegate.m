@@ -26,7 +26,7 @@
     [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker1" localizedTitle:@"1h" localizedSubtitle:@"Choos a ONE HOUR poker" icon:nil userInfo:nil]];
     [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker2" localizedTitle:@"2h" localizedSubtitle:@"Choose a TWO HOUR poker" icon:nil userInfo:nil]];
     [items addObject:[[UIApplicationShortcutItem alloc] initWithType:@"Poker3" localizedTitle:@"3h" localizedSubtitle:@"Choose a THREE HOUR poker" icon:nil userInfo:nil]];
-    application.shortcutItems = items;
+    application.shortcutItems = items.copy;
     return YES;
 }
 

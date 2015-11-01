@@ -103,19 +103,25 @@ static CGFloat kItemHeight = 150.f;
 
 #pragma mark static things
 + (NSArray *)pokerNumbers {
-    return @[@"0", @"1/2", @"1", @"2", @"3", @"5", @"8", @"13", @"20", @"40", @"100", @"∞", @"?", @"!"];
+//    return @[@"0", @"1/2", @"1", @"2", @"3", @"5", @"8", @"13", @"20", @"40", @"100", @"∞", @"?", @"!"];
+    return @[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"11", @"12", @"13", @"14", @"15", @"16", @"17", @"18", @"19", @"20", @"21", @"22", @"23", @"24", @"25", @"26", @"27", @"28", @"29", @"30"];
 }
 
 #pragma mark - peek and pop
 
 // for peek
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location {
+    // 为获取真正的cell, 必须手动调整偏移
+    location.y += self.collectionView.contentOffset.y;
     NSIndexPath *indexPath = [self.collectionView indexPathForItemAtPoint:location];
     if (!indexPath) {
         return nil;
     }
     SPMainViewCell *cell = (SPMainViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-    previewingContext.sourceRect = cell.frame;
+    CGRect sourceRect = cell.frame;
+    // 计算cell在当前屏幕中的位置
+    sourceRect.origin.y -= self.collectionView.contentOffset.y;
+    previewingContext.sourceRect = sourceRect;
     SPPokerDetailController *detailController = [self.storyboard instantiateViewControllerWithIdentifier:@"SPPokerDetailController"];
     detailController.pokerNumber = cell.number.text;
     detailController.preferredContentSize = CGSizeMake(0.0, 400);
